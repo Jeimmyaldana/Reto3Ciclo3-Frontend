@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Reservaciones</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categoria.html">Categoria</a></li>
+            <li><a href="machine.html">Maquina</a></li>
+            <li><a href="cliente.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            
+        </ul>
+        <script type="text/javascript">
+            window.onload = getMachine_Reservation();
+        </script>
+
+        <script type="text/javascript">
+            window.onload = getClient_Reservation();
+        </script>
+
+       
+
+        <script type="text/javascript">
+            window.onload = getReservaciones();
+        </script>
+
+        <label>Ingrese la fecha de inicio de la reservación</label>
+        <input type="date" id="startDate" placeholder="startDate" ><br>
+        <label>Ingrese la fecha de devolucion de la maquina</label>
+        <input type="date" id="devolutionDate" placeholder="devolutionDate"><br>
+
+        <button onclick="postReservaciones()" >
+            Crear Reservación
+        </button>
+
+    </body>
+
+</html>
