@@ -2,7 +2,7 @@
 
 function getCliente (){
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://192.9.238.217:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){   
@@ -20,7 +20,7 @@ function postCliente(){
         age:$("#age").val()
     };
     $.ajax({
-        url:"http://localhost:8080/api/Client/save",
+        url:"http://192.9.238.217:8080/api/Client/save",
         type:"POST",
         datatype:"JSON",
         contentType:"application/json; charset=utf-8",

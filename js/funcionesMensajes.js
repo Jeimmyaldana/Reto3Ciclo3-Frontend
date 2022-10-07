@@ -2,7 +2,7 @@
 
 function getMensajes (){
     $.ajax({
-        url:"http://localhost:8080/api/Message/all",
+        url:"http://192.9.238.217:8080/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -21,7 +21,7 @@ function postMensajes(){
     };
     console.log(cajas);
     $.ajax({
-        url:"http://localhost:8080/api/Message/save",
+        url:"http://192.9.238.217:8080/api/Message/save",
         type:"POST",
         datatype:"JSON",
         contentType:"application/json; charset=utf-8",

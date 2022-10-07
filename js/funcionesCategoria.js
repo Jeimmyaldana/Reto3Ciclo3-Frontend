@@ -2,7 +2,7 @@
 
 function getCategoria (){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://192.9.238.217:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -20,7 +20,7 @@ function postCategoria(){
         description:$("#description").val()
     };
     $.ajax({
-        url:"http://localhost:8080/api/Category/save",
+        url:"http://192.9.238.217:8080/api/Category/save",
         type:"POST",
         datatype:"JSON",
         contentType:"application/json; charset=utf-8",
